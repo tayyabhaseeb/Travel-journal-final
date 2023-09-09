@@ -1,13 +1,116 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.header-container {
+  min-height: 55px;
+  background-color: rgba(245, 90, 90, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.header-container > img {
+  width: 50px;
+  height: 50px;
+}
+
+.header-container > p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* component styling */
+
+.main-container {
+  /* border: 5px solid red; */
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: 1rem auto;
+  gap: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.main-container > .largeImage {
+  /* width: 125px;
+  height: 168px; */
+  width: 150px;
+  height: 200px;
+  top: 100px;
+  left: 40px;
+  border-radius: 5px;
+}
+
+.location-cont {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  gap: 10px;
+}
+
+.google-maps {
+  margin-left: 1rem;
+
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: gray;
+}
+
+.mount {
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.date,
+.desc {
+  margin-left: 0.5rem;
+}
+
+.date {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.desc {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.loco-icon {
+  color: red;
+}
+.country {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+  text-align: left;
 }
